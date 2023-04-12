@@ -9,7 +9,7 @@ const Nav = () =>{
         <>
             <nav>
                 <h1>Sale Brasil</h1>
-                <input type="text" value={busca} onChange={(ev) => setBusca(ev.target.value)}/>
+                <input type="text" value={busca} placeholder="Pesquisa" onChange={(ev) => setBusca(ev.target.value)}/>
             </nav>
         </>
     )

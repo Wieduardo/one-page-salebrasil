@@ -50,14 +50,20 @@ export default createGlobalStyle`
   ul{
     display: flex;
     flex-direction: row;
-    overflow-y: auto;
-    gap: 15px;
+    justify-content: space-between;
+    max-height: 85vh;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    gap: 10px 0px;
     list-style-type:none;
     padding: 15px;
   }
   li{
-    max-width:30vw;
+    max-width:20vw;
+    min-width:20vw;
+    min-height: 40vh;
     border-radius: 10px;
+    outline: thick solid var(--color-primary-light);
     box-shadow: 5px 5px 5px gray;
     
     &:hover{
@@ -67,7 +73,30 @@ export default createGlobalStyle`
     }
   }
   li > img{
-    max-width:25vw;
+    max-width:20vw;
+    border-radius: 10px;
+  }
+  .info_sites{
+    padding:10px;
+    max-width:20vw;
+  }
+  @media(max-width: 800px) {
+    ul{
+        overflow-y: auto;
+        flex-wrap:nowrap;
+        min-height:80vh;
+    }
+    li{
+        min-width:85vw;
+        margin-left:5vw;
+    }
+    li > img{
+        max-width:85vw;
+        border-top: 10px
+    }
+    .info_sites{
+        min-width:85vw;
+    }
   }
   body, input, button, textarea {
     font-family: 'Roboto';
