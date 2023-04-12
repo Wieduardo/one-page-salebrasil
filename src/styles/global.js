@@ -2,11 +2,13 @@ import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
   :root {
-    --color-background: #0b0b0b;
+    --color-background: #FFF;
     --color-primary: #F2A30B;
+    --color-primary-light: #FCC761;
     --color-secondary: #0C2FDF;
     --color-tertiary: #FFE182;
-    --color-text: #FFF;
+    --color-text: #252525;
+    --color-text2: #FFF;
     --color-red: #B4423E; 
     --color-success: #7CC39C;
     --color-warning: #FBEA85;
@@ -35,6 +37,38 @@ export default createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
   }
+  nav{
+    height: 80px;
+    background: var(--color-primary);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-text2);
+    padding: 0px 20px;
+  }
+  ul{
+    display: flex;
+    flex-direction: row;
+    overflow-y: auto;
+    gap: 15px;
+    list-style-type:none;
+    padding: 15px;
+  }
+  li{
+    max-width:30vw;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+    
+    &:hover{
+        cursor:pointer;
+        box-shadow: 5px 5px 5px #F2A30B;
+        transition: 0.75s;
+    }
+  }
+  li > img{
+    max-width:25vw;
+  }
   body, input, button, textarea {
     font-family: 'Roboto';
     font-size: 1.6rem;
@@ -57,11 +91,12 @@ export default createGlobalStyle`
   }
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: var(--color-primary-dark);
+    background: var(--color-primary-light);
     border-radius: 1.6rem;
   }
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: var(--color-primary);
+    cursor: pointer;
   }
 `;

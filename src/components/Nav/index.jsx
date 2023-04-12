@@ -8,6 +8,7 @@ const Nav = () =>{
     return(
         <>
             <nav>
+                <h1>Sale Brasil</h1>
                 <input type="text" value={busca} onChange={(ev) => setBusca(ev.target.value)}/>
             </nav>
         </>

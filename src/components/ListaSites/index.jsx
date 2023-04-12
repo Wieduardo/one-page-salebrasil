@@ -7,13 +7,15 @@ const Lista = () => {
 
     return(
         <>
-            <div>
-                <ul>
-                    {filtro.map((site) => (
-                        <li key={site}>{site.nome}</li>
-                    ))}
-                </ul>
-            </div>
+            <ul>
+                {filtro.map((site) => (
+                    <li key={site}>
+                        <img src={site.imagem} alt={site.nome} />
+                        <h3>{site.nome}</h3>
+                        <span>{site.descri}</span>
+                    </li>
+                ))}
+            </ul>
         </>
     )
 }
