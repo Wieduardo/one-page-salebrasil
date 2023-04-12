@@ -50,17 +50,17 @@ export default createGlobalStyle`
   ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     max-height: 85vh;
     flex-wrap: wrap;
     overflow-x: auto;
-    gap: 10px 0px;
+    gap: 25px 25px;
     list-style-type:none;
     padding: 15px;
   }
   li{
-    max-width:20vw;
-    min-width:20vw;
+    max-width:22vw;
+    min-width:22vw;
     min-height: 40vh;
     border-radius: 10px;
     outline: thick solid var(--color-primary-light);
@@ -73,7 +73,7 @@ export default createGlobalStyle`
     }
   }
   li > img{
-    max-width:20vw;
+    max-width:22vw;
     border-radius: 10px;
   }
   .info_sites{
@@ -85,6 +85,7 @@ export default createGlobalStyle`
         overflow-y: auto;
         flex-wrap:nowrap;
         min-height:80vh;
+        justify-content: space-between;
     }
     li{
         min-width:85vw;
