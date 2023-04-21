@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { GlobalContext } from "../../providers/global";
+import { List, Card, InfoCard } from "./style";
 
 const Lista = () => {
 
@@ -7,17 +8,17 @@ const Lista = () => {
 
     return(
         <>
-            <ul>
+            <List>
                 {filtro.map((site) => (
-                    <li key={site}>
+                    <Card key={site}>
                         <img src={site.imagem} alt={site.nome} />
-                        <div className="info_sites">
+                        <InfoCard>
                             <h3>{site.nome}</h3>
                             <span>{site.descri} <a href={site.link} target="blank">{site.nome}</a></span>
-                        </div>
-                    </li>
+                        </InfoCard>
+                    </Card>
                 ))}
-            </ul>
+            </List>
         </>
     )
 }
