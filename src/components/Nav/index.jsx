@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { GlobalContext } from "../../providers/global";
-import { Logo, NavContent, Navigation, Submenu } from "./style";
+import { Logo, NavContent, Navigation } from "./style";
 
 const Nav = () =>{
 

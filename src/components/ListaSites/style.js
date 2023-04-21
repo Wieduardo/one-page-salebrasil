@@ -10,6 +10,7 @@ export const List = styled.ul`
     gap: 25px 25px;
     list-style-type:none;
     padding: 15px;
+    margin:20px 0;
 
     @media(max-width: 800px){
         overflow-y: auto;

@@ -5,7 +5,7 @@ export default createGlobalStyle`
     --color-background: #FFF;
     --color-primary: #F2A30B;
     --color-primary-light: #FCC761;
-    --color-secondary: #0C2FDF;
+    --color-secondary: #D3D3D3;
     --color-tertiary: #FFE182;
     --color-text: #252525;
     --color-text2: #FFF;
@@ -29,6 +29,9 @@ export default createGlobalStyle`
   body,html{
     width: 100vw;
     height: 100vh;
+  }
+  html:focus-within {
+    scroll-behavior: smooth;
   }
   body {
     background: var(--color-background);

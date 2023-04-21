@@ -9,8 +9,8 @@ const Lista = () => {
     return(
         <>
             <List>
-                {filtro.map((site) => (
-                    <Card key={site}>
+                {filtro.map((site, index) => (
+                    <Card key={index}>
                         <img src={site.imagem} alt={site.nome} />
                         <InfoCard>
                             <h3>{site.nome}</h3>
