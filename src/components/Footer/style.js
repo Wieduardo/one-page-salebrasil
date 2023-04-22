@@ -4,6 +4,7 @@ export const FooterContainer= styled.footer`
     min-height: 35vh;
     color: var(--color-primary);
     background-color: var(--color-text);
+    font-family: 'Bebas Neue', cursive; 
     display: flex;
     flex-direction: column;
     align-items: center;

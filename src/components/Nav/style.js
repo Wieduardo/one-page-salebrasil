@@ -11,6 +11,7 @@ export const Navigation= styled.nav`
     color: var(--color-text2);
     padding: 10px 20px 0 20px;
     z-index: 1000;
+    font-family: 'Bebas Neue', cursive;  
 `
 
 export const Logo = styled.div`

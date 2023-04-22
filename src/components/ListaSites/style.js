@@ -11,6 +11,7 @@ export const List = styled.ul`
     list-style-type:none;
     padding: 15px;
     margin:20px 0;
+    font-family: 'Bebas Neue', cursive; 
 
     @media(max-width: 800px){
         overflow-y: auto;

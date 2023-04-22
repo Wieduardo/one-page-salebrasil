@@ -7,37 +7,40 @@ const Carrossel = () => {
 
     const { carrossel } = useContext(GlobalContext);
 
-    const controls = document.querySelectorAll('.control');
+    window.onload = function(){
 
-    let currentItem = 0;
+        const controls = document.querySelectorAll('.control');
 
-    const items = document.querySelectorAll('.item');
+        let currentItem = 0;
 
-    const maxItems = items.length;
+        const items = document.querySelectorAll('.item');
 
-    controls.forEach( control => {
-        control.addEventListener('click', () => {
-            const isLeft = control.classList.contains("arrow-left");
-            
-            if(isLeft){
-                currentItem -= 1;
-            } else {
-                currentItem +=1;
-            }
-            if (currentItem >= maxItems){
-                currentItem = 0;
-            }
-            if (currentItem < 0){
-                currentItem= maxItems -1;
-            }
+        const maxItems = items.length;
+        
+        controls.forEach( control => {
+            control.addEventListener('click', () => {
+                const isLeft = control.classList.contains("arrow-left");
+                
+                if(isLeft){
+                    currentItem -= 1;
+                } else {
+                    currentItem +=1;
+                }
+                if (currentItem >= maxItems){
+                    currentItem = 0;
+                }
+                if (currentItem < 0){
+                    currentItem= maxItems -1;
+                }
 
-            items[currentItem].scrollIntoView({
-                behavior: "smooth",
-                inline: "center",
-                block: "nearest",
+                items[currentItem].scrollIntoView({
+                    behavior: "smooth",
+                    inline: "center",
+                    block: "nearest",
+                });
             });
         });
-    });
+    };
 
     return(
         <>
