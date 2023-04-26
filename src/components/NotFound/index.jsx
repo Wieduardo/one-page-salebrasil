@@ -6,8 +6,8 @@ const Erro404 = () => {
     return(
         <>
             <Erro404Container>
-                <TbError404/>
-                <h1>Página Não encontrada.</h1>
+                <span><TbError404/></span>
+                <h1>Página Não Encontrada</h1>
             </Erro404Container>
         </>
     )
