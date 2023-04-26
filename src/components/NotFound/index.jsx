@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import { TbError404 } from 'react-icons/tb'
 import { Erro404Container } from "./style";
 
