@@ -1,11 +1,12 @@
 import {Routes, Route} from 'react-router-dom'
 import Home from '../pages/Home';
+import Maint from '../pages/Maintenance';
 
 const RoutesMain = () => {
     return(
         <Routes>
-            <Route path='/' element={<Home/>}/>
-            <Route path='/dashboard' element={<h1>Dashboard</h1>}/>
+            <Route path='/maintenance-view' element={<Home/>}/>
+            <Route path='/' element={<Maint/>} />
         </Routes>
     )
 }
