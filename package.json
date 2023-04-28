@@ -1,5 +1,6 @@
 {
   "name": "one-page-salebrasil",
+  "homepage": "http://www.salebrasil.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -1,5 +1,6 @@
 import Carrossel from "../../components/Carrossel";
 import Footer from "../../components/Footer";
+import Intro from "../../components/Intro";
 import Lista from "../../components/ListaSites";
 import Nav from "../../components/Nav";
 
@@ -9,6 +10,7 @@ const Home = () =>{
         <>
             <Nav/>
             <Carrossel/>
+            <Intro/>
             <Lista/>
             <Footer/>
         </>
